@@ -1,18 +1,17 @@
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Key from "../components/Key";
 
 export interface Key {
   symbols: {
-    symbol1: string;
-    symbol2?: string;
+    symbol1: string | StaticImport;
+    symbol2?: string | StaticImport;
   };
   colSpan: ColSpanClass;
   rowSpan: RowSpanClass;
   additionalClasses?: string;
 }
 
-export interface KeyProps extends Omit<Key, "colSpan" | "rowSpan"> {
-  doubleSymbol?: boolean;
-}
+export type KeyProps = Pick<Key, "symbols">;
 
 export enum ColSpanClass {
   ONE = "col-span-1",
