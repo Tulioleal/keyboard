@@ -3,7 +3,7 @@ import { KEYS } from "./const/Keys";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen container m-auto my-10">
+    <main className="flex container m-auto my-10">
       <div className="grid grid-cols-58 grid-rows-24 gap-2 p-1 w-full">
         {
           KEYS.map((key, index) => {
@@ -17,10 +17,7 @@ export default function Home() {
                   // TODO: create the nudge for the enter key
                 `}
               >
-                <Key
-                  symbols={symbols}
-                  doubleSymbol={Boolean(symbols.symbol2)}
-                />
+                <Key symbols={symbols} />
               </div>
             );
           })
