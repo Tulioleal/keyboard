@@ -1,12 +1,13 @@
+// Import necessary types and icons
 import { ColSpanClass, Key, RowSpanClass } from "../interfaces/Key";
 import * as Icons from "react-icons/lu";
 import { PiPlayPauseBold, PiControlBold } from "react-icons/pi";
 import { BiSolidLeftArrow, BiSolidRightArrow, BiSolidUpArrow, BiSolidDownArrow } from "react-icons/bi";
 import { AiOutlineEnter } from "react-icons/ai";
 
-
+// Define the keyboard layout configuration
 export const KEYS = [
-  // First Row
+  // First Row: Function keys and escape key
   {
     symbols: { symbol1: "esc" },
     colSpan: ColSpanClass.SIX,
@@ -77,7 +78,7 @@ export const KEYS = [
     colSpan: ColSpanClass.FOUR,
     rowSpan: RowSpanClass.TWO,
   },
-  // Second Row
+  // Second Row: Numbers and special characters
   {
     symbols: { symbol1: "|", symbol2: "°" },
     colSpan: ColSpanClass.FOUR,
@@ -91,7 +92,7 @@ export const KEYS = [
       symbols: { symbol1: "1" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "2", symbol2: "@" },
@@ -101,7 +102,7 @@ export const KEYS = [
       symbols: { symbol1: "2" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "3", symbol2: "#" },
@@ -111,7 +112,7 @@ export const KEYS = [
       symbols: { symbol1: "3" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "4", symbol2: "$" },
@@ -121,7 +122,7 @@ export const KEYS = [
       symbols: { symbol1: "4" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "5", symbol2: "%" },
@@ -131,7 +132,7 @@ export const KEYS = [
       symbols: { symbol1: "5" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "6", symbol2: "&" },
@@ -141,7 +142,7 @@ export const KEYS = [
       symbols: { symbol1: "6" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "7", symbol2: "/" },
@@ -151,7 +152,7 @@ export const KEYS = [
       symbols: { symbol1: "7" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "8", symbol2: "(" },
@@ -161,7 +162,7 @@ export const KEYS = [
       symbols: { symbol1: "8" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "9", symbol2: ")" },
@@ -171,7 +172,7 @@ export const KEYS = [
       symbols: { symbol1: "9" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "0", symbol2: "=" },
@@ -181,7 +182,7 @@ export const KEYS = [
       symbols: { symbol1: "0" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "'", symbol2: "?" },
@@ -198,7 +199,7 @@ export const KEYS = [
     colSpan: ColSpanClass.SIX,
     rowSpan: RowSpanClass.TWO,
   },
-  // Third Row
+  // Third Row: Letters and Enter key
   {
     symbols: { symbol1: Icons.LuArrowRightToLine },
     colSpan: ColSpanClass.SIX,
@@ -212,7 +213,7 @@ export const KEYS = [
       symbols: { symbol1: "Q" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "W" },
@@ -222,7 +223,7 @@ export const KEYS = [
       symbols: { symbol1: "W" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "E" },
@@ -232,7 +233,7 @@ export const KEYS = [
       symbols: { symbol1: "E" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "R" },
@@ -242,7 +243,7 @@ export const KEYS = [
       symbols: { symbol1: "R" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "T" },
@@ -252,7 +253,7 @@ export const KEYS = [
       symbols: { symbol1: "T" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "Y" },
@@ -262,7 +263,7 @@ export const KEYS = [
       symbols: { symbol1: "Y" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "U" },
@@ -272,7 +273,7 @@ export const KEYS = [
       symbols: { symbol1: "U" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "I" },
@@ -282,7 +283,7 @@ export const KEYS = [
       symbols: { symbol1: "I" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "O" },
@@ -292,7 +293,7 @@ export const KEYS = [
       symbols: { symbol1: "O" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "P" },
@@ -302,7 +303,7 @@ export const KEYS = [
       symbols: { symbol1: "P" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "´", symbol2: "¨" },
@@ -320,7 +321,7 @@ export const KEYS = [
     rowSpan: RowSpanClass.FOUR,
     additionalClasses: "col-start-56",
   },
-  // fourth row
+  // Fourth Row: Letters and special characters
   {
     symbols: { symbol1: Icons.LuArrowBigUpDash },
     colSpan: ColSpanClass.SEVEN,
@@ -334,7 +335,7 @@ export const KEYS = [
       symbols: { symbol1: "A" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "S" },
@@ -344,7 +345,7 @@ export const KEYS = [
       symbols: { symbol1: "S" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "D" },
@@ -354,7 +355,7 @@ export const KEYS = [
       symbols: { symbol1: "D" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "F" },
@@ -364,7 +365,7 @@ export const KEYS = [
       symbols: { symbol1: "F" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "G" },
@@ -374,7 +375,7 @@ export const KEYS = [
       symbols: { symbol1: "G" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "H" },
@@ -384,7 +385,7 @@ export const KEYS = [
       symbols: { symbol1: "H" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "J" },
@@ -394,7 +395,7 @@ export const KEYS = [
       symbols: { symbol1: "J" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "K" },
@@ -404,7 +405,7 @@ export const KEYS = [
       symbols: { symbol1: "K" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "L" },
@@ -414,7 +415,7 @@ export const KEYS = [
       symbols: { symbol1: "L" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "Ñ" },
@@ -424,7 +425,7 @@ export const KEYS = [
       symbols: { symbol1: "Ñ" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "{", symbol2: "[" },
@@ -436,7 +437,7 @@ export const KEYS = [
     colSpan: ColSpanClass.FOUR,
     rowSpan: RowSpanClass.TWO,
   },
-  // Fifth row
+  // Fifth Row: Letters and special characters
   {
     symbols: { symbol1: Icons.LuArrowBigUp },
     colSpan: ColSpanClass.FIVE,
@@ -445,7 +446,7 @@ export const KEYS = [
       symbols: { symbol1: Icons.LuArrowBigUp },
       colSpan: ColSpanClass.SIX,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "<", symbol2: ">" },
@@ -460,7 +461,7 @@ export const KEYS = [
       symbols: { symbol1: "Z" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "X" },
@@ -470,7 +471,7 @@ export const KEYS = [
       symbols: { symbol1: "X" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "C" },
@@ -480,7 +481,7 @@ export const KEYS = [
       symbols: { symbol1: "C" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "V" },
@@ -490,7 +491,7 @@ export const KEYS = [
       symbols: { symbol1: "V" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "B" },
@@ -500,7 +501,7 @@ export const KEYS = [
       symbols: { symbol1: "B" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "N" },
@@ -510,7 +511,7 @@ export const KEYS = [
       symbols: { symbol1: "N" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: "M" },
@@ -520,7 +521,7 @@ export const KEYS = [
       symbols: { symbol1: "M" },
       colSpan: ColSpanClass.FOUR,
       rowSpan: RowSpanClass.TWO,
-    }
+    },
   },
   {
     symbols: { symbol1: Icons.LuDelete },
@@ -553,7 +554,7 @@ export const KEYS = [
     colSpan: ColSpanClass.NINE,
     rowSpan: RowSpanClass.TWO,
   },
-  // Sixth row
+  // Sixth Row: Control keys and space bar
   {
     symbols: { symbol1: Icons.LuBolt },
     colSpan: ColSpanClass.FIVE,
@@ -667,4 +668,4 @@ export const KEYS = [
     },
     mobileOnly: true,
   },
-] as Key[]
+] as Key[];

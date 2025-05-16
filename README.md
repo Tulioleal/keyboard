@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+x# React Keyboard Layout
 
-## Getting Started
+This project is a React-based application that renders a customizable keyboard layout. It is designed to be responsive and supports macOS-specific icons and symbols.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Dynamic Keyboard Layout**: The keyboard layout is dynamically generated based on a configuration file.
+- **Responsive Design**: Adapts to different screen sizes, including mobile and desktop views.
+- **macOS Symbols**: Includes macOS-specific icons and symbols for keys like Command (⌘), Option (⌥), and more.
+- **Customizable Keys**: Easily modify the layout and symbols by editing the configuration.
+
+## Project Structure
+
+```plaintext
+keyboard/
+├── app/
+│   ├── components/
+│   │   └── Key.tsx          # Component for rendering individual keys
+│   ├── const/
+│   │   ├── Keys.ts          # Configuration for keyboard keys
+│   │   └── Sizes.ts         # Screen size constants
+│   ├── globals.css          # Global styles
+│   ├── layout.tsx           # Layout component
+│   └── page.tsx             # Main page rendering the keyboard
+├── public/                  # Static assets
+├── README.md                # Project documentation
+├── package.json             # Project dependencies
+├── tsconfig.json            # TypeScript configuration
+└── next.config.ts           # Next.js configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   git clone <repository-url>
+   ```
 
-## Learn More
+2. Navigate to the project directory:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   cd keyboard
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Install dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+## Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Start the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm run dev
+   ```
+
+2. Open your browser and navigate to:
+
+   ```bash
+   http://localhost:3000
+   ```
+
+## Customization
+
+- **Modify Keys**: Update the `Keys.ts` file in the `app/const/` directory to change the keyboard layout or symbols.
+
+## Technologies Used
+
+- **React**: For building the user interface.
+- **Next.js**: For server-side rendering and routing.
+- **TypeScript**: For type safety and better developer experience.
+- **CSS**: For styling the application.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests to improve the project.
+
+## Acknowledgments
+
+- Inspired by macOS keyboard layouts and design principles.
+- Icons provided by [React Icons](https://react-icons.github.io/react-icons/).
