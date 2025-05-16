@@ -1,14 +1,16 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Key from "../components/Key";
+import { IconType } from "react-icons";
 
 export interface Key {
   symbols: {
-    symbol1: string | StaticImport;
-    symbol2?: string | StaticImport;
+    symbol1: string | IconType;
+    symbol2?: string | IconType;
   };
   colSpan: ColSpanClass;
   rowSpan: RowSpanClass;
   additionalClasses?: string;
+  mobile: Pick<Key, "symbols" | "colSpan" | "rowSpan" | "additionalClasses">;
+  mobileOnly?: boolean;
 }
 
 export type KeyProps = Pick<Key, "symbols">;
