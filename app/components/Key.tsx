@@ -1,6 +1,5 @@
 import { JSX } from "react";
 import { KeyProps } from "../interfaces/Key";
-import Image from "next/image";
 
 function Key({
   symbols,
@@ -40,13 +39,13 @@ function Key({
         ">{
           typeof symbols.symbol2 === "string"
             ? symbols.symbol2
-            : <Image src={symbols.symbol2} alt="" width={15}/>
+            : <symbols.symbol2 />
         }</span>
       ) : null}
       {
         typeof symbols.symbol1 === "string"
           ? symbols.symbol1
-          : <Image src={symbols.symbol1} alt="" width={15}/>
+          : <symbols.symbol1 />
       }
     </button>
   );
