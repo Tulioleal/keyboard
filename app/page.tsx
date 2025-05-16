@@ -18,8 +18,9 @@ export default function Home() {
         grid
         grid-cols-40
         grid-rows-10
-        gap-2
+        gap-0.5
         sm:gap-1
+        md:gap-2
         lg:grid-cols-58
         lg:grid-rows-12
       ">
@@ -36,7 +37,6 @@ export default function Home() {
                   ${width >= Sizes.LG || !Boolean(mobile) ? additionalClasses : mobile.additionalClasses}
                   ${Boolean(mobile) ||  width >= Sizes.LG ? "block" : "hidden"}
                   ${mobileOnly ? "block lg:hidden" : ""}
-                  // TODO: create the nudge for the enter key
                 `}
               >
                 <Key symbols={ width >= Sizes.LG || !Boolean(mobile) ? symbols : mobile.symbols} />

@@ -1,6 +1,7 @@
 import Key from "../components/Key";
 import { IconType } from "react-icons";
 
+// Interface for Key component
 export interface Key {
   symbols: {
     symbol1: string | IconType;
@@ -13,8 +14,12 @@ export interface Key {
   mobileOnly?: boolean;
 }
 
+// Type for Key component props
 export type KeyProps = Pick<Key, "symbols">;
 
+// Enum for column and row span classes
+// These classes are used to define the number of columns and rows a key should span in the grid layout
+// The classes are based on Tailwind CSS grid system
 export enum ColSpanClass {
   ONE = "col-span-1",
   TWO = "col-span-2",

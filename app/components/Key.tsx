@@ -19,6 +19,7 @@ function Key({
       justify-center-safe
       text-lg
       font-bold
+      py-2
       text-gray-200
       cursor-pointer
       transition
